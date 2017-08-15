@@ -1,0 +1,15 @@
+<div class="rr_streamblock rr_parentblock" data-treepath="{{tree_path}}" data-path="{{path}}" data-id="{{id}}">
+    <div class="rr_block_content">
+        <input type="hidden" name="{{path}}-count"   value="{{count}}"   class="rr_count" data-id="{{id}}"/>
+        <input type="hidden" name="{{path}}-order"   value="{{order}}"   class="rr_order" data-id="{{id}}"/>
+        <input type="hidden" name="{{path}}-deleted" value="{{deleted}}" class="rr_deleted" data-id="{{id}}"/>
+
+        <div class="rr_children" data-id="{{id}}"></div>
+
+        <button type="button" data-action="addChild" data-params="{{id}}" class="rr_action addChild button bicolor icon icon-plus">Voeg <em>{{label}}</em> toe</button>
+        <div class="stream-menu">
+            <div class="rr_addChild stream-menu-inner" data-id="{{id}}">
+            </div>
+        </div>
+    </div>
+</div>

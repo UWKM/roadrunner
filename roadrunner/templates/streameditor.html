@@ -1,0 +1,15 @@
+{% load static %}
+<!-- {{ error_flag }} -->
+<div style="display: none" id="errorText">{{error_text}}</div>
+<link href="{% static 'roadrunner/css/style.css' %}" rel="stylesheet">
+<script type="text/javascript">
+    rr_data = {
+        'tree':    {{tree    | safe}},
+        'choices': {{choices | safe}},
+        'json':    {{json    | safe}},
+        'errors':  {{errors  | safe}},
+        'colors':  {{colors  | safe}},
+    };
+</script>
+<script type="text/javascript" src="{% static 'roadrunner/js/main.js' %}"></script>
+<div class="rr_editor"></div>

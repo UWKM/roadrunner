@@ -1,0 +1,26 @@
+<div class="rr_documentfield rr_block" data-id="{{id}}">
+    <div class="rr_block_content">
+        <label class="{{required}}" for="{{path}}">{{label}}</label>
+        <div class="input">
+            <div id="{{path}}-chooser" class="chooser document-chooser blank">
+                <div class="chosen">
+                    <span class="title"></span>
+                    <ul class="actions">
+                        <!-- <li><button type="button" class="button action-clear button-small button-secondary">Leeg keuze</button></li> -->
+                        <li><button type="button" class="button action-choose button-small button-secondary">Kies een ander document</button></li>
+                        <!-- <li><a href="" class="edit-link button button-small button-secondary" target="_blank">Wijzig dit document</a></li> -->
+                    </ul>
+                </div>
+
+                <div class="unchosen">
+                    <button type="button" class="button action-choose button-small button-secondary">Kies een document</button>
+                </div>
+            </div>
+
+            <input id="{{path}}" name="{{path}}" placeholder="Document" value="{{value}}" type="hidden">
+            <script>createDocumentChooser("{{path}}");</script>
+            <span></span>
+            <span class="help">{{help_text}}</p>
+        </div>
+    </div>
+</div>

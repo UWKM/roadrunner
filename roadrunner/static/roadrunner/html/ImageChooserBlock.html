@@ -1,0 +1,29 @@
+<div class="rr_imagefield rr_block" data-id="{{id}}">
+    <div class="rr_block_content">
+        <label class="{{required}}" for="{{path}}">{{label}}</label>
+        <div class="input">
+            <div id="{{path}}-chooser" class="chooser image-chooser blank">
+                <div class="chosen">
+                    <div class="preview-image">
+                        <img>
+                    </div>
+
+                    <ul class="actions">
+                        <!-- <li><button type="button" class="button action-clear button-small button-secondary">Leeg keuze</button></li> -->
+                        <li><button type="button" class="button action-choose button-small button-secondary">Kies een andere afbeelding</button></li>
+                        <!-- <li><a href="" class="edit-link button button-small button-secondary" target="_blank">Wijzig deze afbeelding</a></li> -->
+                    </ul>
+                </div>
+
+                <div class="unchosen">
+                    <button type="button" class="button action-choose button-small button-secondary">Kies een afbeelding</button>
+                </div>
+            </div>
+
+            <input id="{{path}}" value="{{value}}" name="{{path}}" placeholder="Afbeelding" type="hidden">
+            <script>createImageChooser("{{path}}");</script>
+            <span></span>
+            <span class="help">{{help_text}}</p>
+        </div>
+    </div>
+</div>

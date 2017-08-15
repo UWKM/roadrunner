@@ -1,0 +1,117 @@
+div.rr_editor {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    margin-top: 45px;
+}
+
+div.rr_addChild {
+    display: none;
+}
+
+div.rr_parentblock {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #FFF;
+    margin-top: 10px;
+}
+
+div.rr_parentblock div.rr_parentblock {
+    background-color: #EEE;
+}
+
+div.rr_parentblock div.rr_parentblock div.rr_parentblock {
+    background-color: #abaaaa;
+}
+
+button.addChild{
+    margin-top: 10px;
+}
+
+div.rr_addChild {
+    margin-top: 10px;
+}
+
+div.rr_block {
+    padding: 10px;
+    background-color: rgba(255,255,255,0.3);
+    border-bottom-color: rgb(67, 177, 176);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    box-sizing: border-box;
+}
+
+div.rr_block_header {
+    width: 100%;
+    height: auto;
+}
+
+div.rr_block_header div.button-group {
+    float: right;
+    clear: right;
+}
+
+span.rr_block_type {
+    display: none;
+}
+
+br.clearfix {
+    clear: both;
+}
+
+div.rr_block label.required::after {
+    content: '*';
+    color: #cd3238;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 0.5em;
+    line-height: 1em;
+    font-size: 13px;
+}
+
+.rr_children > div {
+    display: inline-block;
+}
+
+div.rr_block {
+    width: 100%;
+}
+
+div.block_title {
+    font-weight: bold;
+    color: #256161;
+    font-size: 16px;
+    float: right;
+    color: #43b1b0;
+    background-color: #FFF;
+    padding: 2px;
+}
+
+.rr_listblock {
+    background-color: rgba(255,255,255,0.3);
+}
+
+input.missing, select.missing, textarea.missing, div.missing {
+    border-color: #F00;
+    background-color: #FFE3E3;
+}
+
+/* Color picker fixes */
+div.bfh-colorpicker {
+    position: relative;
+}
+
+div.presets {
+    top: 57px;
+}
+
+div.rr_block_header .button.icon.text-replace::before {
+    font-size: 12px;
+}
+
+div.rr_block_header .button.icon.text-replace {
+    width: 1.5rem;
+    height: 1.5rem;
+}

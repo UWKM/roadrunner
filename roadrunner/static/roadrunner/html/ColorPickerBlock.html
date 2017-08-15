@@ -1,0 +1,16 @@
+<div class="rr_colorpicker rr_block">
+    <div class="rr_block_content">
+        <label class="{{required}}" for="{{path}}">{{label}}</label>
+        <div class="input">
+            <input data-id="{{id}}" data-required="{{required}}" maxlength="10" name="{{path}}" placeholder="{{placeholder}}" value="{{value}}" type="text" />
+            <span class="help">{{help_text}}</span>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var field = $('input[data-id={{id}}]');
+    field.wrap('<div class="bfh-colorpicker" data-color="{{value}}" data-name="{{path}}" data-colors="{{colors}}"></div>');
+    $colorpicker = field.parent();
+    $colorpicker.bfhcolorpicker($colorpicker.data());
+</script>

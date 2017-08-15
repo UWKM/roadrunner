@@ -1,0 +1,10 @@
+<div class="rr_datefield rr_block date_field">
+    <div class="rr_block_content">
+        <label class="{{required}}" for="{{path}}">{{label}}</label>
+        <div class="input">
+            <input id="{{path}}" name="{{path}}" data-required="{{required}}" placeholder="Datum" type="text" value="{{value}}" />
+            <script>initDateChooser("{{path}}", {"dayOfWeekStart": 1, "format": "Y-m-d"});</script>
+            <span class="help">{{help_text}}</span>
+        </div>
+    </div>
+</div>
