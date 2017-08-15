@@ -18,6 +18,24 @@ of awkward path setups and will make our code more lean. It also opens up the
 possibility of moving to a DOMless approach, in which we keep the editor data
 seperate, and not locked in a ton of html input tags.
 
+USAGE:
+------
+1. Install this package using pip
+2. Add `roadrunner` to `INSTALLED_APPS` in your project settings
+3. Add a new urlpattern to your urls.py (this is for loading images / documents..etc):
+
+urls.py
+::
+    url(r'^_roadrunner/', include(roadrunner_urls)),
+
+4. Change your references to StreamFieldPanel into UwkmStreamfieldPanel 
+
+models.py
+::
+        content_panels = Page.content_panels + [
+            UwkmStreamFieldPanel('some_content'),
+        ]
+
 TODOS:
 ------
 
